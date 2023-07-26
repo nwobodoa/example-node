@@ -4,6 +4,9 @@ const cors = require('cors');
 const Event = require('./models/EventModel');
 const eventsRouter = require('./routes/EventRoute');
 
+const seedData= require('./seed')
+
+seedData()
 // Java        -  Js
 // Springboot  -  Express
 // JVM         -  Node
