@@ -88,7 +88,6 @@ async function seedData() {
     await Event.insertMany(eventsData);
 
     console.log("Successfully created events in the database.");
-    mongoose.connection.close();
   } catch (err) {
     console.error(err);
   }
